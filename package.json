@@ -1,0 +1,20 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "Simple Node.js HTTP server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "server",
+    "http"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}
