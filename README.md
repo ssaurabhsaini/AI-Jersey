@@ -128,6 +128,8 @@ GET /outputs/abc123-def456.png
 node-server/
 ├── server.js           # Main API server
 ├── process-jersey.js   # Standalone processing script
+├── assets/            # Static assets (collar image goes here)
+│   └── Jersey-Collar.png  # Optional collar overlay image
 ├── uploads/           # Temporary uploaded files (auto-cleaned)
 ├── outputs/           # Processed images (served via API)
 └── package.json       # Dependencies
@@ -145,5 +147,5 @@ The API returns appropriate HTTP status codes:
 
 - Uploaded files are automatically deleted after processing
 - Processed images are stored in the `outputs/` directory
-- If `Jersey-Collar.png` exists in the parent directory (`../Jersey-Collar.png`), it will be automatically added to the template
+- If `Jersey-Collar.png` exists in the `assets/` directory (`assets/Jersey-Collar.png`), it will be automatically added to the template
 - The collar is resized to 50% of its original size and centered horizontally

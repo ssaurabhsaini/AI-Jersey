@@ -300,8 +300,8 @@ app.post('/api/process-jersey', upload.single('image'), async (req, res) => {
     const outputFilename = `${outputId}.png`;
     const outputPath = path.join(outputsDir, outputFilename);
     
-    // Optional: Check if collar image exists in parent directory
-    const collarPath = path.join(__dirname, '..', 'Jersey-Collar.png');
+    // Optional: Check if collar image exists in assets directory
+    const collarPath = path.join(__dirname, 'assets', 'Jersey-Collar.png');
     const collarExists = fs.existsSync(collarPath);
     
     // Process the image

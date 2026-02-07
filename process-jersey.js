@@ -5,7 +5,7 @@ const fs = require('fs');
 async function createTightJerseyTemplate() {
   const input = path.join(__dirname, '..', 'Front Jersey.png');
   const output = path.join(__dirname, '..', 'Front_Jersey_result1.png');
-  const collar = path.join(__dirname, '..', 'Jersey-Collar.png');
+  const collar = path.join(__dirname, 'assets', 'Jersey-Collar.png');
 
   console.log('Processing image:', input);
   console.log('Output will be saved to:', output);
